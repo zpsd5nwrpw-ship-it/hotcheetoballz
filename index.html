@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe's Hot Cheeto Ballz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--red:#ff1e00;--orange:#ff7b00;--yellow:#ffd400;--black:#080808;--white:#fff7e8}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#080808;color:var(--white);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 10%,#7d0000 0,transparent 28%),radial-gradient(circle at 85% 10%,#ff4d00 0,transparent 25%),linear-gradient(180deg,#070707,#1a0202 55%,#080808)}
+    body:after{content:"";position:fixed;inset:0;z-index:-1;background:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 8px,transparent 8px 18px);opacity:.25}
+    header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.78);backdrop-filter:blur(10px);border-bottom:2px solid rgba(255,212,0,.35)}
+    nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px}.logo{font-family:Bangers,cursive;font-size:32px;color:var(--yellow);text-shadow:3px 3px 0 var(--red)}
+    nav a{color:white;text-decoration:none;font-weight:900;margin-left:18px}.btn{display:inline-block;background:linear-gradient(135deg,var(--yellow),var(--orange));color:#120000;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:900;box-shadow:0 0 0 3px #000,0 0 28px rgba(255,115,0,.8);transform:rotate(-1deg)}
+    .hero{max-width:1100px;margin:auto;padding:70px 22px 45px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}.tag{display:inline-block;background:var(--red);padding:8px 14px;border:2px solid var(--yellow);font-weight:900;transform:rotate(-2deg)}
+    h1{font-family:Bangers,cursive;font-size:clamp(54px,10vw,110px);line-height:.88;margin:18px 0;color:#fff;text-shadow:5px 5px 0 #000,9px 9px 0 var(--red)}.flame{color:var(--yellow)}
+    .hero p{font-size:20px;line-height:1.55;max-width:570px}.hero-card{position:relative}.hero-card img{width:100%;border-radius:26px;border:5px solid var(--yellow);box-shadow:0 0 45px rgba(255,45,0,.65);transform:rotate(2deg)}
+    section{max-width:1100px;margin:auto;padding:55px 22px}h2{font-family:Bangers,cursive;font-size:58px;color:var(--yellow);text-shadow:4px 4px 0 #000;margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:rgba(0,0,0,.72);border:2px solid rgba(255,212,0,.6);border-radius:22px;padding:22px;box-shadow:0 0 25px rgba(255,40,0,.25)}
+    .card h3{font-family:Bangers,cursive;font-size:32px;color:#fff;margin:0 0 8px}.price{font-size:34px;font-weight:900;color:var(--yellow)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery img{width:100%;height:330px;object-fit:cover;border-radius:20px;border:3px solid #2a0000}.deal{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;background:linear-gradient(135deg,#180000,#3a0505);border:3px solid var(--red);border-radius:28px;padding:26px}.deal img{width:100%;border-radius:20px}.bigprice{font-family:Bangers,cursive;font-size:90px;color:#fff;text-shadow:6px 6px 0 var(--red);margin:0}.info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact{ text-align:center;background:rgba(0,0,0,.78);border-top:3px solid var(--red)}footer{padding:28px;text-align:center;color:#ffdfbf;background:#050000}
+    @media(max-width:800px){.hero,.deal{grid-template-columns:1fr}.grid,.gallery,.info{grid-template-columns:1fr}nav{display:block;text-align:center}nav a{display:inline-block;margin:8px}.gallery img{height:420px}}
+  </style>
+</head>
+<body>
+  <header><nav><div class="logo">Joe's Hot Cheeto Ballz</div><div><a href="#menu">Menu</a><a href="#munchy">Munchy Box</a><a href="#gallery">Gallery</a><a href="#order">Order</a></div></nav></header>
+  <main>
+    <section class="hero">
+      <div><span class="tag">Hemet, California • Pick Up Only</span><h1>CRISPY. CHEESY. <span class="flame">SPICY.</span></h1><p>Hot Cheeto coated ballz packed with flavor, drizzled with spicy mayo, and made fresh for serious snack cravings.</p><a class="btn" href="#order">Order Now</a></div>
+      <div class="hero-card"><img src="images/cheeto-ballz-box.jpg" alt="Hot Cheeto ballz with spicy mayo"></div>
+    </section>
+    <section id="menu"><h2>Menu</h2><div class="grid">
+      <div class="card"><h3>Meat & Cheese Ballz</h3><p>Crispy outside, loaded inside.</p><div class="price">$5</div></div>
+      <div class="card"><h3>Mac & Cheese Ballz</h3><p>Creamy mac with a Hot Cheeto crunch.</p><div class="price">$5</div></div>
+      <div class="card"><h3>Mozzarella Ballz</h3><p>Cheesy pull, spicy crunch.</p><div class="price">$5</div></div>
+      <div class="card"><h3>Buldak Ballz</h3><p>Fire ramen flavor with a cheesy bite.</p><div class="price">$5</div></div>
+    </div></section>
+    <section id="munchy"><div class="deal"><img src="images/munchy-box.jpg" alt="Munchy box menu"><div><h2>Munchy Box</h2><p class="bigprice">$25</p><p>Includes 3 ballz, 1 soda, chips, and fries with Hot Cheeto powder & spicy mayo drizzle.</p><a class="btn" href="#order">Grab a Box</a></div></div></section>
+    <section><h2>Fan Favorites</h2><div class="info"><div class="card"><h3>Spicy!</h3><p>That red Hot Cheeto coating brings the heat.</p></div><div class="card"><h3>Cheesy!</h3><p>Every bite is rich, melty, and loaded.</p></div><div class="card"><h3>Crunchy!</h3><p>Fresh crunch with sauce drizzled on top.</p></div></div></section>
+    <section id="gallery"><h2>Gallery</h2><div class="gallery"><img src="images/cheeto-ballz-box.jpg" alt="Hot Cheeto balls"><img src="images/cheeto-fries.jpg" alt="Hot Cheeto fries and ballz"><img src="images/mozzarella-sticks.jpg" alt="Hot Cheetos mozzarella sticks"><img src="images/menu-items.jpg" alt="Menu items"><img src="images/hero-menu.jpg" alt="Joe's Hot Cheeto Ballz menu"><img src="images/ingredients.jpg" alt="Ingredients cart"></div></section>
+    <section id="order" class="contact"><h2>Order Pickup</h2><p><strong>Cash only • Pick up only • Hemet, California</strong></p><p>DM on Instagram: <strong>@Joe.CheetoBallz</strong></p><a class="btn" href="https://instagram.com/Joe.CheetoBallz">DM to Order</a></section>
+  </main><footer>© 2026 Joe's Hot Cheeto Ballz • Crispy Cheesy Spicy Yummy 🔥</footer>
+</body>
+</html>
